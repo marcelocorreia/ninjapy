@@ -720,7 +720,7 @@ class NinjaRMMClient:
         if expand:
             params["expand"] = expand
 
-        return self._request("GET", f"/v2/devices/{device_id}", params=params)
+        return self._request("GET", f"/v2/device/{device_id}", params=params)
 
     def update_device(self, device_id: int, **kwargs) -> Dict:
         """
